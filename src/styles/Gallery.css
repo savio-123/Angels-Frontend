@@ -1,0 +1,203 @@
+.gallery-section {
+
+    padding: 30px 0;
+
+    background: #f7f7f7;
+}
+
+
+.gallery-small-title {
+
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: #020406;
+    margin-bottom: 15px;
+}
+
+
+.gallery-main-title {
+
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.1;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #020a11;
+}
+
+
+/* MASONRY GRID */
+
+.gallery-grid {
+
+    column-count: 3;
+
+    column-gap: 30px;
+}
+
+
+.gallery-item {
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    break-inside: avoid;
+}
+
+
+.gallery-image {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 12px;
+
+    transition: 0.5s ease;
+}
+
+
+.gallery-item:hover .gallery-image {
+
+    transform: scale(1.05);
+}
+
+
+/* RESPONSIVE */
+
+/* =========================================
+   LARGE TABLETS
+   iPad Pro / Landscape
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .gallery-main-title {
+
+        font-size: 3.5rem;
+
+        max-width: 760px;
+    }
+
+    .gallery-grid {
+
+        column-gap: 24px;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   iPad Mini / Air
+========================================= */
+
+@media (max-width: 992px) {
+
+    .gallery-section {
+
+        padding: 70px 0;
+    }
+
+    .gallery-main-title {
+
+        font-size: 3rem;
+
+        max-width: 650px;
+
+        margin-bottom: 24px;
+    }
+
+    .gallery-small-title {
+
+        font-size: 12px;
+    }
+
+    .gallery-grid {
+
+        column-count: 2;
+
+        column-gap: 20px;
+    }
+
+    .gallery-item {
+
+        margin-bottom: 18px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .gallery-section {
+
+        padding: 55px 0;
+    }
+
+    .gallery-small-title {
+
+        font-size: 11px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 12px;
+    }
+
+    .gallery-main-title {
+
+        font-size: 2.3rem;
+
+        line-height: 1.1;
+
+        padding: 0 18px;
+
+        margin-bottom: 22px;
+    }
+
+    .gallery-grid {
+
+        column-count: 2;
+
+        column-gap: 14px;
+    }
+
+    .gallery-item {
+
+        margin-bottom: 14px;
+
+        border-radius: 10px;
+    }
+
+    .gallery-image {
+
+        border-radius: 10px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .gallery-main-title {
+
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+
+        column-count: 1;
+    }
+}

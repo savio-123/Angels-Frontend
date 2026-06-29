@@ -1,0 +1,1370 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+.about-page {
+
+    background: #f8f2f1;
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 5rem;
+
+    font-weight: 300;
+
+    color: #241d19;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.section-heading h2 span {
+
+    color: #c9a15d;
+
+    font-style: italic;
+}
+
+
+.section-heading p {
+
+    color: #8d837b;
+
+    margin-top: 20px;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background:
+        url("/bg.jpg")
+        no-repeat center center;
+
+    background-size: cover;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.about-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,0.55);
+}
+
+
+.about-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    color: white;
+}
+
+
+.about-mini-title {
+
+    color: #d0a95f;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+    padding-left: 55px;
+}
+
+
+.about-mini-title::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 40px;
+    height: 1px;
+
+    background: #d0a95f;
+}
+
+
+.about-hero-content h1 {
+
+    font-size: 7rem;
+
+    line-height: 0.95;
+
+    font-weight: 300;
+
+    margin-bottom: 35px;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.about-hero-content h1 span {
+
+    color: #d0a95f;
+
+    font-style: italic;
+}
+
+
+.about-description {
+
+    max-width: 900px;
+
+    line-height: 1.8;
+
+    font-size: 1.4rem;
+
+    color: rgba(255,255,255,0.9);
+}
+
+
+/* =========================================
+   JOURNEY
+========================================= */
+
+.journey-section {
+
+    padding: 140px 0;
+
+    background: #f8f5f1;
+}
+
+
+.journey-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.journey-image {
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    padding: 10px;
+
+    background: white;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.08);
+
+    opacity: 0;
+
+    transform: translateX(-80px);
+
+    transition: 1s ease;    
+}
+
+
+.journey-image img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 18px;
+}
+
+.journey-content {
+
+    opacity: 0;
+
+    transform: translateX(80px);
+
+    transition: 1s ease;
+}
+
+.journey-visible .journey-image,
+.journey-visible .journey-content {
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+.journey-content h2 {
+
+    font-size: 5rem;
+
+    font-weight: 300;
+
+    margin-bottom: 35px;
+
+    color: #241d19;
+
+    line-height: 1;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.journey-content h2 span {
+
+    color: #c9a15d;
+
+    font-style: italic;
+}
+
+
+.journey-content p {
+
+    color: #857b74;
+
+    line-height: 2;
+
+    font-size: 1.15rem;
+
+    margin-bottom: 30px;
+}
+
+
+.journey-trust {
+
+    margin-top: 60px;
+
+    padding-top: 40px;
+
+    border-top:
+        1px solid rgba(0,0,0,0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.trust-icons {
+
+    width: 110px;
+
+    height: 70px;
+
+    border-radius: 60px;
+
+    border:
+        1px solid rgba(0,0,0,0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #c9a15d;
+
+    font-size: 1.2rem;
+}
+
+
+.journey-trust span {
+
+    letter-spacing: 3px;
+
+    font-size: 0.95rem;
+
+    color: #241d19;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PHILOSOPHY
+========================================= */
+
+.philosophy-section {
+
+    padding: 130px 0;
+
+    background: white;
+}
+
+
+.philosophy-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+
+.philosophy-card {
+
+    background: #fbfaf8;
+
+    padding: 60px 35px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.04);
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition:
+        all 0.8s ease;
+}
+
+.philosophy-card.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.philosophy-card:hover {
+
+    transform:
+        translateY(-10px);
+}
+
+
+.philosophy-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: auto;
+
+    margin-bottom: 35px;
+
+    border-radius: 50%;
+
+    background: #f8efea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 2rem;
+
+    color: #c9a15d;
+}
+
+
+.philosophy-card h3 {
+
+    font-size: 2rem;
+
+    font-weight: 300;
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+
+    color: #241d19;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.philosophy-card p {
+
+    color: #8d837b;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.stats-section {
+
+    padding: 90px 0;
+
+    background: #241d19;
+
+    opacity: 0;
+
+    transform: scale(0.95);
+
+    transition: 1s ease;
+}
+
+.stats-section.stats-visible {
+
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+
+.stat-item {
+
+    text-align: center;
+
+    border-right:
+        1px solid rgba(255,255,255,0.1);
+}
+
+
+.stat-item:last-child {
+
+    border-right: none;
+}
+
+
+.stat-item h2 {
+
+    font-size: 5rem;
+
+    color: #d0a95f;
+
+    font-weight: 300;
+
+    margin-bottom: 10px;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.stat-item p {
+
+    letter-spacing: 3px;
+
+    color: rgba(255,255,255,0.85);
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   ARTISTS
+========================================= */
+
+.artists-section {
+
+    padding: 50px 0;
+
+    background: #f8f5f1;
+}
+
+
+.artists-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.artist-card {
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: translateY(80px);
+
+    transition:
+        all 0.8s ease;
+}
+
+.artist-card.artist-visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+.artist-image-wrapper {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    padding: 8px;
+
+    height: 400px;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+}
+
+
+.artist-image-wrapper img {
+
+    width: 100%;
+
+    height: 384px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 18px;
+
+    transition: 0.5s ease;
+}
+
+
+.artist-overlay {
+
+    position: absolute;
+
+    inset: 0px;
+
+    background:
+        rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+
+    border-radius: 18px;
+}
+
+
+.artist-overlay p {
+
+    color: white;
+
+    font-size: 2rem;
+
+    line-height: 1.5;
+
+    font-style: italic;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.artist-image-wrapper:hover img {
+
+    transform: scale(1.05);
+}
+
+
+.artist-image-wrapper:hover
+.artist-overlay {
+
+    opacity: 1;
+}
+
+
+.artist-card h3 {
+
+    margin-top: 35px;
+
+    font-size: 2.5rem;
+
+    font-weight: 300;
+
+    color: #241d19;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.artist-card span {
+
+    display: block;
+
+    margin-top: 12px;
+
+    letter-spacing: 4px;
+
+    color: #c9a15d;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   ATMOSPHERE
+========================================= */
+
+.atmosphere-section {
+
+    padding: 130px 0;
+
+    background: white;
+}
+
+
+.atmosphere-header {
+
+    margin-bottom: 60px;
+}
+
+
+.atmosphere-header h2 {
+
+    font-size: 5rem;
+
+    font-weight: 300;
+
+    color: #241d19;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.atmosphere-header span {
+
+    color: #c9a15d;
+
+    font-style: italic;
+}
+
+
+.atmosphere-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr;
+
+    gap: 35px;
+}
+
+.atmosphere-large {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition: 1s ease;
+}
+
+.atmosphere-large img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    transition: 0.5s ease;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+}
+
+
+.atmosphere-small-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+
+    opacity: 0;
+
+    transform: translateY(100px);
+
+    transition: 1s ease;
+}
+
+
+.atmosphere-small-grid img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    transition: 0.5s ease;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+}
+
+
+.atmosphere-small-grid img:last-child {
+
+    grid-column: span 2;
+
+    height: 420px;
+}
+
+
+.atmosphere-large img:hover,
+.atmosphere-small-grid img:hover {
+
+    transform: scale(1.03);
+}
+
+.atmosphere-visible
+.atmosphere-large,
+.atmosphere-visible
+.atmosphere-small-grid {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+
+    padding: 120px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d5b06d,
+            #c29a4f
+        );
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: scale(0.92);
+
+    transition: 1s ease;
+}
+
+.about-cta.cta-visible {
+
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+.about-cta h2 {
+
+    font-size: 5rem;
+
+    font-weight: 300;
+
+    color: white;
+
+    margin-bottom: 50px;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.about-cta-btn {
+
+    display: inline-block;
+
+    background: #241d19;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 22px 50px;
+
+    font-size: 1rem;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+
+.about-cta-btn:hover {
+
+    background: white;
+
+    color: #241d19;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+/* =========================================
+   LARGE TABLETS
+   iPad Pro / Landscape Tablets
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .container {
+
+        padding-left: 35px !important;
+
+        padding-right: 35px !important;
+    }
+
+    .about-hero-content h1 {
+
+        font-size: 5.5rem;
+    }
+
+    .journey-content h2,
+    .section-heading h2,
+    .atmosphere-header h2,
+    .about-cta h2 {
+
+        font-size: 4rem;
+    }
+
+    .philosophy-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .artists-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .artist-image-wrapper {
+
+        height: 420px;
+    }
+
+    .artist-image-wrapper img {
+
+        height: 404px;
+    }
+
+    .atmosphere-small-grid img:last-child {
+
+        height: 320px;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   iPad Mini / Air
+========================================= */
+
+@media (max-width: 992px) {
+
+    .container {
+
+        padding-left: 28px !important;
+
+        padding-right: 28px !important;
+    }
+
+    .about-hero {
+
+        min-height: 80vh;
+
+        padding-top: 120px;
+    }
+
+    .about-hero-content {
+
+        max-width: 100%;
+    }
+
+    .about-hero-content h1 {
+
+        font-size: 4.5rem;
+
+        line-height: 0.95;
+    }
+
+    .about-description {
+
+        max-width: 100%;
+
+        font-size: 1.15rem;
+    }
+
+
+    /* JOURNEY */
+
+    .journey-section {
+
+        padding: 90px 0;
+    }
+
+    .journey-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .journey-content h2 {
+
+        font-size: 3.8rem;
+    }
+
+
+    /* PHILOSOPHY */
+
+    .philosophy-section {
+
+        padding: 90px 0;
+    }
+
+    .philosophy-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 24px;
+    }
+
+    .philosophy-card {
+
+        padding: 45px 28px;
+    }
+
+
+    /* STATS */
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+    .stat-item {
+
+        border-right: none;
+    }
+
+
+    /* ARTISTS */
+
+    .artists-section {
+
+        padding: 90px 0;
+    }
+
+    .artists-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        
+
+        gap: 24px;
+    }
+
+    .artist-image-wrapper {
+
+        height: 360px;
+    }
+
+    .artist-image-wrapper img {
+
+        height: 344px;
+    }
+
+    .artist-card h3 {
+
+        font-size: 2rem;
+    }
+
+    .artist-overlay p {
+
+        font-size: 1.5rem;
+    }
+
+
+    /* ATMOSPHERE */
+
+    .atmosphere-section {
+
+        padding: 90px 0;
+    }
+
+    .atmosphere-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+    .atmosphere-small-grid img {
+
+        height: 220px;
+    }
+
+    .atmosphere-small-grid img:last-child {
+
+        height: 500px;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+
+        padding: 90px 0;
+    }
+
+    .about-cta h2 {
+
+        font-size: 3.8rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .container {
+
+        padding-left: 18px !important;
+
+        padding-right: 18px !important;
+    }
+
+    .section-heading {
+
+        margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+
+        font-size: 2.8rem;
+
+        line-height: 1;
+    }
+
+
+    /* HERO */
+
+    .about-hero {
+
+        min-height: 75vh;
+
+        padding-top: 100px;
+    }
+
+    .about-hero-content h1 {
+
+        font-size: 3rem;
+
+        line-height: 0.95;
+
+        margin-bottom: 25px;
+    }
+
+    .about-description {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    /* JOURNEY */
+
+    .journey-section {
+
+        padding: 70px 0;
+    }
+
+    .journey-grid {
+
+        gap: 40px;
+    }
+
+    .journey-content h2 {
+
+        font-size: 2.8rem;
+    }
+
+    .journey-content p {
+
+        font-size: 0.95rem;
+    }
+
+    .journey-trust {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+        margin-top: 35px;
+    }
+
+
+    /* PHILOSOPHY */
+
+    .philosophy-section {
+
+        padding: 70px 0;
+    }
+
+    .philosophy-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .philosophy-card {
+
+        padding: 40px 24px;
+    }
+
+    .philosophy-card h3 {
+
+        font-size: 1.8rem;
+    }
+
+
+    /* STATS */
+
+    .stats-section {
+
+        padding: 70px 0;
+    }
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+
+        border-bottom:
+            1px solid rgba(255,255,255,0.1);
+
+        padding-bottom: 25px;
+    }
+
+    .stat-item:last-child {
+
+        border-bottom: none;
+    }
+
+    .stat-item h2 {
+
+        font-size: 3.5rem;
+    }
+
+
+    /* ARTISTS */
+
+    .artists-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .artist-image-wrapper {
+
+        height: 420px;
+    }
+
+    .artist-image-wrapper img {
+
+        height: 404px;
+    }
+
+    .artist-overlay p {
+
+        font-size: 1.3rem;
+    }
+
+
+    /* ATMOSPHERE */
+
+    .atmosphere-header h2 {
+
+        font-size: 2.8rem;
+    }
+
+    .atmosphere-small-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .atmosphere-small-grid img:last-child {
+
+        grid-column: span 1;
+    }
+
+    .atmosphere-small-grid img {
+
+        height: 220px;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+
+        padding: 70px 0;
+    }
+
+    .about-cta h2 {
+
+        font-size: 2.8rem;
+
+        line-height: 1;
+    }
+
+    .about-cta-btn {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 18px 20px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .about-hero-content h1 {
+
+        font-size: 2.4rem;
+    }
+
+    .journey-content h2,
+    .section-heading h2,
+    .atmosphere-header h2,
+    .about-cta h2 {
+
+        font-size: 2.2rem;
+    }
+
+    .artist-image-wrapper {
+
+        height: 340px;
+    }
+
+    .artist-image-wrapper img {
+
+        height: 324px;
+    }
+
+    .artist-overlay p {
+
+        font-size: 1.1rem;
+    }
+}

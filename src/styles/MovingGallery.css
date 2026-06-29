@@ -1,0 +1,103 @@
+.moving-gallery-section {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 40px 0;
+
+    background: #f7f7f7;
+}
+
+
+/* TRACK */
+
+.moving-gallery-track {
+
+    display: flex;
+
+    width: fit-content;
+
+    gap: 22px;
+
+    animation:
+        movingGalleryScroll
+        28s
+        linear
+        infinite;
+}
+
+
+/* ITEMS */
+
+.moving-gallery-item {
+
+    flex-shrink: 0;
+
+    width: 320px;
+
+    aspect-ratio: 4 / 4;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+
+/* IMAGE */
+
+.moving-gallery-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    display: block;
+
+    transition: 0.5s ease;
+}
+
+
+.moving-gallery-item:hover
+.moving-gallery-image {
+
+    transform: scale(1.05);
+}
+
+
+/* ANIMATION */
+
+@keyframes movingGalleryScroll {
+
+    from {
+
+        transform: translateX(0);
+    }
+
+    to {
+
+        transform: translateX(-50%);
+    }
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .moving-gallery-item {
+
+        width: 220px;
+
+        height: 320px;
+    }
+
+    .moving-gallery-track {
+
+        gap: 14px;
+    }
+}

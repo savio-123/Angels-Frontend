@@ -1,0 +1,360 @@
+.footer-section {
+
+    background: #f4f1ec;
+
+    padding: 40px 0 15px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.footer-logo {
+
+    width: 240px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   TITLES
+========================================= */
+
+.footer-small-title {
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    color: #0d5cab;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.footer-links a,
+.footer-links span {
+
+    text-decoration: none;
+
+    color: #0d5cab;
+
+    font-size: 1.05rem;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-links a:hover {
+
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.footer-contact p {
+
+    color: #0d5cab;
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+.footer-contact a {
+
+    color: #0d5cab;
+
+    text-decoration: none;
+
+    font-size: 1.05rem;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+
+    margin-top: 35px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid rgba(0,0,0,0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: #0d5cab;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================
+   SOCIALS
+========================================= */
+
+.footer-socials {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+
+.footer-socials a {
+
+    color: #0d5cab;
+
+    font-size: 1.4rem;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   LARGE TABLETS
+   iPad Pro / Landscape
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .footer-section {
+
+        padding: 55px 0 18px;
+    }
+
+    .footer-section .container {
+
+        padding-left: 32px;
+
+        padding-right: 32px;
+    }
+
+    .footer-logo {
+
+        width: 200px;
+    }
+
+    .footer-section .row {
+
+        row-gap: 40px;
+    }
+
+    .footer-links a,
+    .footer-links span,
+    .footer-contact p,
+    .footer-contact a {
+
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .footer-section {
+
+        padding: 45px 0 18px;
+
+        text-align: center;
+    }
+
+    .footer-section .container {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+    }
+
+    .footer-logo {
+
+        width: 155px;
+
+        margin:
+            0 auto 20px;
+    }
+
+    .footer-section .row {
+
+        row-gap: 28px;
+    }
+
+    .footer-small-title {
+
+        font-size: 11px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 16px;
+    }
+
+
+    /* LINKS LAYOUT */
+
+    .footer-section .col-lg-2,
+    .footer-section .col-lg-3:nth-child(3) {
+
+        width: 50%;
+    }
+
+    .footer-links {
+
+        gap: 10px;
+    }
+
+    .footer-links a,
+    .footer-links span {
+
+        font-size: 0.9rem;
+    }
+
+
+    /* CONTACT */
+
+    .footer-section .col-lg-3:last-child {
+
+        width: 100%;
+    }
+
+    .footer-contact {
+
+        align-items: center;
+
+        gap: 14px;
+    }
+
+    .footer-contact p,
+    .footer-contact a {
+
+        font-size: 0.9rem;
+
+        justify-content: center;
+    }
+
+
+    /* BOTTOM */
+
+    .footer-bottom {
+
+        margin-top: 28px;
+
+        padding-top: 18px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .footer-bottom p {
+
+        font-size: 0.82rem;
+
+        line-height: 1.7;
+    }
+
+    .footer-socials {
+
+        justify-content: center;
+
+        width: 100%;
+
+        gap: 18px;
+    }
+
+    .footer-socials a {
+
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .footer-logo {
+
+        width: 140px;
+    }
+
+    .footer-links a,
+    .footer-links span,
+    .footer-contact p,
+    .footer-contact a {
+
+        font-size: 0.86rem;
+    }
+
+    .footer-bottom p {
+
+        font-size: 0.78rem;
+    }
+}

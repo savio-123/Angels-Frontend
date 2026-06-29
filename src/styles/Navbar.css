@@ -1,0 +1,559 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.custom-navbar {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    padding: 20px 0;
+
+    background: transparent;
+
+    opacity: 0;
+
+    transform: translateY(-20px);
+
+    animation:
+        navbarReveal 1s forwards;
+
+    animation-delay: 0.2s;
+
+    animation-timing-function:
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+@keyframes navbarReveal {
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   NAV CONTAINER
+========================================= */
+
+.custom-nav-container {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto 1fr;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+
+.brand-image {
+
+    width: 99px;
+
+    height: 99px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    transition: 0.3s ease;
+}
+
+/* =========================================
+   CENTER LINKS
+========================================= */
+
+.nav-center-links {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-self: center;
+
+    gap: 38px;
+}
+
+
+.nav-center-link {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    letter-spacing: 1px;
+
+    position: relative;
+
+    opacity: 0;
+
+    transform: translateY(-12px);
+
+    animation:
+        navItemReveal 0.8s forwards;
+
+    animation-timing-function:
+        cubic-bezier(0.22, 1, 0.36, 1);
+
+    transition: 0.3s ease;
+}
+
+
+.nav-center-link:hover {
+
+    color: #f3d9dc;
+}
+
+
+.nav-center-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0%;
+
+    height: 1px;
+
+    background: white;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-center-link:hover::after {
+
+    width: 100%;
+}
+
+
+/* =========================================
+   NAV LINK ANIMATION DELAYS
+========================================= */
+
+.nav-center-link:nth-child(1) {
+
+    animation-delay: 0.5s;
+}
+
+.nav-center-link:nth-child(2) {
+
+    animation-delay: 0.6s;
+}
+
+.nav-center-link:nth-child(3) {
+
+    animation-delay: 0.7s;
+}
+
+.nav-center-link:nth-child(4) {
+
+    animation-delay: 0.8s;
+}
+
+.dashboard-link {
+    
+    position: relative;
+
+    top: -1px;
+
+    padding: 11px 24px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+    color: black;
+
+    transition: 0.3s ease;
+
+    background: white;
+
+    opacity: 0;
+
+    animation:
+        navItemReveal 0.8s forwards;
+
+    animation-delay: 0.9s;
+
+    animation-timing-function:
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.dashboard-link:hover {
+
+    background: rgba(255,255,255,0.18);
+
+    color: white;
+
+    backdrop-filter: blur(2px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.15);
+
+    transform: translateY(-2px);
+}
+
+
+@keyframes navItemReveal {
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RIGHT BUTTONS
+========================================= */
+
+.navbar-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-self: end;
+
+    gap: 14px;
+
+    opacity: 0;
+
+    transform: translateY(-12px);
+
+    animation:
+        navItemReveal 0.8s forwards;
+
+    animation-delay: 0.9s;
+
+    animation-timing-function:
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.nav-link-btn {
+
+    padding: 11px 24px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+
+    color: black;
+
+    background: #ffffff;
+}
+
+
+.nav-book-btn,
+.register-btn,
+.logout-btn {
+
+    padding: 11px 24px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-book-btn {
+
+    background: white;
+
+    color: black;
+
+    font-weight: 500;
+}
+
+
+.register-btn {
+
+    background: #f7d7da;
+
+    color: black;
+}
+
+
+.logout-btn {
+
+    background: crimson;
+
+    color: white;
+
+    border: none;
+}
+
+
+.nav-book-btn:hover,
+.nav-link-btn:hover,
+.register-btn:hover,
+.logout-btn:hover {
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-btn {
+
+    display: none;
+
+    width: 45px;
+
+    height: 45px;
+
+    background: none;
+
+    border: none;
+
+    position: relative;
+
+    z-index: 2000;
+}
+
+
+.mobile-menu-btn span {
+
+    position: absolute;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: white;
+
+    transition: 0.3s ease;
+}
+
+
+.mobile-menu-btn span:nth-child(1) {
+
+    top: 10px;
+}
+
+.mobile-menu-btn span:nth-child(2) {
+
+    top: 20px;
+}
+
+.mobile-menu-btn span:nth-child(3) {
+
+    top: 30px;
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu {
+
+    position: fixed;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+
+    height: 100vh;
+
+    background: #ff009d;
+
+    z-index: 1500;
+
+    padding: 50px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition: 0.4s ease;
+}
+
+
+.show-menu {
+
+    left: 0;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-menu-btn {
+
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 2rem;
+}
+
+
+/* =========================================
+   MOBILE LINKS
+========================================= */
+
+.mobile-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+    margin-top: 70px;
+}
+
+
+.mobile-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 2rem;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   MOBILE BOTTOM
+========================================= */
+
+.mobile-bottom {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    color: white;
+}
+
+
+.mobile-bottom a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.mobile-book-btn {
+
+    border: 1px solid white;
+
+    padding: 16px 24px;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1025px) {
+
+    .nav-center-links,
+    .navbar-buttons {
+
+        display: none;
+    }
+
+    .mobile-menu-btn {
+
+        display: block;
+    }
+
+    .brand-text {
+
+        font-size: 0.85rem;
+
+        letter-spacing: 2px;
+    }
+
+    .brand-image {
+
+        width: 65px;
+
+        height: 65px;
+    }
+}

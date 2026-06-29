@@ -1,0 +1,1007 @@
+/* =========================================
+   PAGE
+========================================= */
+
+body {
+
+    background: #f7f4ef;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.lux-services-hero {
+
+    padding: 110px 0 80px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(214,190,170,0.18),
+            transparent 35%
+        ),
+        #f7f4ef;
+}
+
+
+.lux-services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+.lux-mini-title {
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #c8a46a;
+
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+
+.lux-mini-title::before {
+
+    content: "";
+
+    width: 40px;
+
+    height: 1px;
+
+    background: #c8a46a;
+
+    display: inline-block;
+
+    margin-right: 12px;
+
+    vertical-align: middle;
+}
+
+
+.lux-services-title {
+
+    font-size: 5rem;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    color: #1e1b18;
+
+    margin-bottom: 25px;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.lux-services-description {
+
+    color: #7d746b;
+
+    line-height: 2;
+
+    max-width: 520px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.lux-hero-buttons {
+
+    display: flex;
+
+    gap: 16px;
+}
+
+
+.lux-primary-btn {
+
+    padding: 16px 28px;
+
+    background: #c8a46a;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+
+.lux-primary-btn:hover {
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.lux-services-right {
+
+    position: relative;
+}
+
+
+.lux-hero-image-wrapper {
+
+    border-radius: 320px 320px 0 0;
+
+    overflow: hidden;
+
+    border: 5px solid white;
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.12);
+}
+
+
+.lux-hero-image-wrapper img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.lux-floating-review {
+
+    position: absolute;
+
+    left: -30px;
+
+    bottom: -20px;
+
+    background: rgba(255,255,255,0.7);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 18px 22px;
+
+    border-radius: 16px;
+
+    font-size: 0.9rem;
+
+    color: #5c544d;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.08);
+}
+
+
+/* =========================================
+   ART SECTION
+========================================= */
+
+.lux-art-section {
+
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+
+.lux-art-content {
+
+    max-width: 760px;
+
+    margin: auto;
+}
+
+
+.lux-art-icon {
+
+    color: #c8a46a;
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+
+.lux-art-content h2 {
+
+    font-size: 4rem;
+
+    font-weight: 300;
+
+    margin-bottom: 25px;
+
+    color: #1e1b18;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.lux-art-content p {
+
+    color: #7d746b;
+
+    line-height: 2;
+}
+
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.lux-services-section {
+
+    padding: 120px 0;
+}
+
+
+.lux-services-header {
+
+    margin-bottom: 60px;
+}
+
+
+.lux-services-header h2 {
+
+    font-size: 4rem;
+
+    font-weight: 300;
+
+    color: #1e1b18;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+/* =========================================
+   CARDS GRID
+========================================= */
+
+.lux-services-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 32px;
+
+    align-items: start;
+}
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.lux-card-image {
+
+    overflow: hidden;
+}
+
+
+.lux-card-image img {
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    transition:
+        transform 0.45s ease;
+}
+
+.lux-service-card:hover
+.lux-card-image img {
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.lux-card-content {
+
+    padding: 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 320px;
+}
+
+
+.lux-card-content h3 {
+
+    font-size: 2rem;
+
+    font-weight: 300;
+
+    margin-bottom: 15px;
+
+    color: #1e1b18;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.lux-card-content p {
+
+    color: #7d746b;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+    flex-grow: 1;
+}
+
+
+/* =========================================
+   CARD BOTTOM
+========================================= */
+
+.lux-card-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+
+.lux-card-bottom span {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #b89b6b;
+}
+
+
+.lux-card-bottom h4 {
+
+    margin-top: 8px;
+
+    font-size: 1.3rem;
+
+    color: #1e1b18;
+}
+
+
+.lux-duration {
+
+    background: #f7f4ef;
+
+    padding: 10px 16px;
+
+    border-radius: 50px;
+
+    font-size: 0.85rem;
+
+    color: #6f665d;
+}
+
+
+/* =========================================
+   CARD BUTTON
+========================================= */
+
+.lux-card-btn {
+
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background: #1e1b18;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+
+.lux-card-btn:hover {
+
+    background: #c8a46a;
+}
+
+
+/* =========================================
+   ESCAPE SECTION
+========================================= */
+
+.lux-escape-section {
+
+    background: #231d19;
+
+    padding: 120px 0;
+
+    color: white;
+}
+
+
+.lux-escape-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.lux-escape-content h2 {
+
+    font-size: 4.5rem;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    margin-bottom: 30px;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+
+.lux-escape-content span {
+
+    color: #d2a75f;
+
+    font-style: italic;
+}
+
+
+.lux-escape-content p {
+
+    color: rgba(255,255,255,0.72);
+
+    line-height: 2;
+
+    margin-bottom: 35px;
+}
+
+
+.lux-escape-content ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+
+.lux-escape-content li {
+
+    margin-bottom: 18px;
+
+    color: rgba(255,255,255,0.85);
+}
+
+
+.lux-escape-content li::before {
+
+    content: "✓";
+
+    color: #d2a75f;
+
+    margin-right: 12px;
+}
+
+
+/* =========================================
+   ESCAPE IMAGES
+========================================= */
+
+.lux-escape-images {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.escape-img-one {
+
+    width: 400px;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    border-radius:
+        200px 200px 0 0;
+}
+
+
+.escape-img-two {
+
+    width: 400px;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    
+    object-position: center top;
+
+    border-radius:
+        200px 200px 0 0;
+}
+
+
+/* =========================================
+   ART REVEAL
+========================================= */
+
+.lux-art-section {
+
+    opacity: 0;
+
+    filter: blur(12px);
+
+    transition:
+        opacity 1.2s ease,
+        filter 1.2s ease;
+}
+
+.lux-art-section.art-visible {
+
+    opacity: 1;
+
+    filter: blur(0);
+}
+
+/* =========================================
+   CARD REVEAL
+========================================= */
+
+.lux-service-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: white;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0,0,0,0.05);
+
+    height: 100%;
+
+    opacity: 0;
+
+    box-shadow:
+        0 0 0 rgba(0,0,0,0);
+
+    transition:
+        box-shadow 0.15s ease,
+        transform 0.15s ease;
+}
+
+.lux-service-card.card-visible {
+
+    animation:
+        cardReveal 0.8s
+        cubic-bezier(0.22,1,0.36,1)
+        forwards;
+
+    animation-delay:
+        var(--delay);
+}
+
+@keyframes cardReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(80px)
+            rotateX(10deg);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            rotateX(0);
+    }
+}
+/* =========================================
+   HOVER
+========================================= */
+
+.lux-service-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,5);
+}
+
+/* =========================================
+   ESCAPE REVEAL
+========================================= */
+
+.lux-escape-content {
+
+    opacity: 0;
+
+    transform:
+        translateX(-80px);
+
+    transition:
+        all 1s ease;
+}
+
+.lux-escape-images {
+
+    opacity: 0;
+
+    transform:
+        translateX(80px);
+
+    transition:
+        all 1s ease;
+}
+
+.escape-left-active {
+
+    opacity: 1;
+
+    transform:
+        translateX(0);
+}
+
+.escape-right-active {
+
+    opacity: 1;
+
+    transform:
+        translateX(0);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+/* =========================================
+   LARGE TABLETS
+   iPad Pro / Landscape Tablets
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .lux-services-grid,
+    .lux-escape-grid {
+
+        gap: 50px;
+    }
+
+    .lux-services-title {
+
+        font-size: 4.2rem;
+    }
+
+    .lux-services-cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .lux-card-image img {
+
+        height: 280px;
+    }
+
+    .lux-card-content {
+
+        min-height: 280px;
+    }
+
+    .lux-escape-images {
+
+        gap: 24px;
+    }
+
+    .escape-img-one,
+    .escape-img-two {
+
+        width: 100%;
+
+        height: 300px;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   iPad Mini / iPad Air
+========================================= */
+
+@media (max-width: 992px) {
+
+    .container {
+
+        padding-left: 28px !important;
+
+        padding-right: 28px !important;
+    }
+
+    .lux-services-grid,
+    .lux-escape-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .lux-services-right {
+
+        order: -1;
+    }
+
+    .lux-services-title {
+
+        font-size: 3.8rem;
+    }
+
+    .lux-services-description {
+
+        max-width: 100%;
+    }
+
+    .lux-hero-buttons {
+
+        flex-wrap: wrap;
+    }
+
+    .lux-services-cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 24px;
+    }
+
+    .lux-card-image img {
+
+        height: 240px;
+    }
+
+    .lux-card-content {
+
+        padding: 22px;
+
+        min-height: 250px;
+    }
+
+    .lux-card-content h3 {
+
+        font-size: 1.8rem;
+    }
+
+    .lux-escape-images {
+
+        justify-content: center;
+    }
+
+    .escape-img-one,
+    .escape-img-two {
+
+        width: 320px;
+
+        height: 260px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .container {
+
+        padding-left: 18px !important;
+
+        padding-right: 18px !important;
+    }
+
+    .lux-services-hero {
+
+        padding: 100px 0 60px;
+    }
+
+    .lux-services-grid {
+
+        gap: 40px;
+    }
+
+    .lux-services-title {
+
+        font-size: 2.8rem;
+
+        line-height: 1;
+    }
+
+    .lux-services-description {
+
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+    .lux-primary-btn {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .lux-services-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+    .lux-card-image img {
+
+        height: 240px;
+    }
+
+    .lux-card-content {
+
+        min-height: auto;
+    }
+
+    .lux-card-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+    .lux-card-btn {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .lux-escape-images {
+
+        flex-direction: column;
+    }
+
+    .escape-img-one {
+
+        width: 100%;
+
+        height: 560px;
+
+        border-radius:
+            140px 140px 0 0;
+    }
+
+    .escape-img-two {
+
+        display: none;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .lux-services-title {
+
+        font-size: 2.3rem;
+    }
+
+    .lux-art-content h2,
+    .lux-services-header h2,
+    .lux-escape-content h2 {
+
+        font-size: 2rem;
+    }
+
+    .lux-hero-image-wrapper img {
+
+        height: 300px;
+        animation: heroZoom 8s ease forwards;
+    }
+
+    .lux-card-image img {
+
+        height: 220px;
+    }
+
+    @keyframes heroZoom {
+
+        from {
+    
+            transform: scale(1.08);
+        }
+    
+        to {
+    
+            transform: scale(1);
+        }
+    }
+}

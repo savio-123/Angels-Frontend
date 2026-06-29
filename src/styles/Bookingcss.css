@@ -1,0 +1,351 @@
+.booking-page {
+
+    background-size: cover;
+    background: #fdf8f8;
+    padding: 50px 20px 80px;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.booking-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   IMAGE SIDE
+========================================= */
+
+.booking-image-side {
+
+    height: 668px;
+
+    overflow: hidden;
+}
+
+
+.booking-image-side img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.booking-form-side {
+
+    padding: 44px 42px;
+    
+    background: #ffefef;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+.booking-small-title {
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    color: #9b7b6f;
+
+    margin-bottom: 18px;
+}
+
+
+.booking-title {
+
+    font-size: 2.8rem;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    margin-bottom: 10px;
+
+    color: #2b2b2b;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+}
+
+.booking-description {
+
+    color: #777;
+
+    line-height: 1.5;
+
+    margin-bottom: 16px;
+
+    max-width: 420px;
+
+    font-size: 0.92rem;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.booking-form {
+
+    width: 100%;
+
+}
+
+
+.booking-input {
+
+    height: 40px;
+
+    margin-bottom: 7px !important;
+
+    border: none !important;
+
+    border-bottom:
+        1px solid #ddd !important;
+
+    border-radius: 0 !important;
+
+    padding-left: 0 !important;
+
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    font-size: 0.92rem !important;
+}
+
+.booking-input:focus {
+
+    border-color: #2b2b2b !important;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.booking-btn {
+
+    margin-top: 10px;
+
+    border: none;
+
+    background: #2b2b2b;
+
+    color: white;
+
+    padding: 10px 24px;
+
+    border-radius: 50px;
+
+    letter-spacing: 2px;
+
+    font-size: 0.9rem;
+
+    transition: 0.3s ease;
+}
+
+.booking-btn:hover {
+
+    background: black;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+/* =========================================
+   LARGE TABLETS
+   iPad Pro / Landscape
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .booking-container {
+
+        max-width: 100%;
+    }
+
+    .booking-image-side {
+
+        height: 650px;
+    }
+
+    .booking-form-side {
+
+        padding: 40px 36px;
+    }
+
+    .booking-title {
+
+        font-size: 2.5rem;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   iPad Mini / Air
+========================================= */
+
+@media (max-width: 992px) {
+
+    .booking-page {
+
+        padding: 40px 25px 70px;
+    }
+
+    .booking-container {
+
+        grid-template-columns: 1fr;
+
+        border-radius: 20px;
+    }
+
+    .booking-image-side {
+
+        height: 420px;
+    }
+
+    .booking-form-side {
+
+        padding: 40px 34px;
+    }
+
+    .booking-title {
+
+        font-size: 2.4rem;
+    }
+
+    .booking-description {
+
+        max-width: 100%;
+    }
+
+    .booking-form {
+
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .booking-page {
+
+        padding: 30px 14px 60px;
+    }
+
+    .booking-container {
+
+        border-radius: 18px;
+    }
+
+    .booking-image-side {
+
+        height: 280px;
+    }
+
+    .booking-form-side {
+
+        padding: 32px 22px;
+    }
+
+    .booking-small-title {
+
+        font-size: 11px;
+
+        letter-spacing: 3px;
+    }
+
+    .booking-title {
+
+        font-size: 2rem;
+
+        line-height: 1.05;
+    }
+
+    .booking-description {
+
+        font-size: 0.9rem;
+
+        line-height: 1.7;
+
+        margin-bottom: 14px;
+    }
+
+    .booking-input {
+
+        height: 42px;
+
+        font-size: 0.9rem !important;
+    }
+
+    .booking-btn {
+
+        width: 100%;
+
+        padding: 14px;
+
+        margin-top: 16px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .booking-image-side {
+
+        height: 240px;
+    }
+
+    .booking-title {
+
+        font-size: 1.8rem;
+    }
+
+    .booking-form-side {
+
+        padding: 28px 18px;
+    }
+}

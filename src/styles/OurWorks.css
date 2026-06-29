@@ -1,0 +1,146 @@
+.works-section {
+
+    padding: 30px 0;
+
+    background: #f7f7f7;
+}
+
+
+.works-small-title {
+
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: #020406;
+    margin-bottom: 15px;
+}
+
+.works-main-title {
+
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.1;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #020a11;
+}
+
+
+.work-card {
+
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+
+.work-image {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+
+.work-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,0.35);
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.work-card:hover .work-overlay {
+
+    opacity: 1;
+}
+
+
+.work-card:hover .work-image {
+
+    transform: scale(1.05);
+}
+
+
+.play-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 2rem;
+
+    backdrop-filter: blur(4px);
+}
+
+
+.insta-icon {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+    color: white;
+
+    font-size: 1.7rem;
+}
+
+
+@media (max-width: 767px) {
+
+    .works-main-title {
+
+        font-size: 2.8rem;
+
+        padding: 0 20px;
+    }
+
+    .work-image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .work-image {
+        height: 400px;
+    }
+}
