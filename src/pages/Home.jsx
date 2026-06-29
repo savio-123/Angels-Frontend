@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import api from '../services/api'
 import { Link } from "react-router-dom";
 
-import WhyChooseUs from "../components/Whychooseus";
+import WhyChooseUs from "../components/WhyChooseUs";
 import ServicesSection from "../components/ServicesSection";
 import OurWorks from "../components/OurWorks";
 import Gallery from '../components/Gallery';
