@@ -1272,7 +1272,6 @@ function Dashboard() {
 
                                         <AddService
                                             onSuccess={() => {
-                                                fetchServices();
                                                 setShowAddService(false);
                                             }}
                                             onClose={() => setShowAddService(false)}
