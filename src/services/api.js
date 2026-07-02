@@ -73,11 +73,24 @@ api.interceptors.response.use(
 
             } catch {
 
-                localStorage.removeItem("access")
-
-                localStorage.removeItem("refresh")
-
-                window.location.href = "/own-login"
+                localStorage.removeItem("access");
+            
+                localStorage.removeItem("refresh");
+            
+                const protectedRoutes = [
+                    "/dashboard"
+                ];
+            
+                const isProtected = protectedRoutes.some(route =>
+                    window.location.pathname.startsWith(route)
+                );
+            
+                if (isProtected) {
+            
+                    window.location.href = "/own-login";
+                }
+            
+                return Promise.reject(error);
             }
         }
 
