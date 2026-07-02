@@ -5,6 +5,7 @@ import {
     useNavigate
 } from "react-router-dom";
 import api from "../services/api";
+import {CalendarDays, Clock3} from "lucide-react";
 
 import InnerNavbar from "../components/InnerNavbar";
 import Footer from "../components/Footer";
@@ -31,15 +32,14 @@ function BookAppointment() {
 
 
     useEffect(() => {
-
         fetchServices()
-
     }, [])
 
+    const serviceID = Number(id)
 
     const selectedService = services.find(
 
-        (service) => service.id == id
+        (service) => service.id === serviceID
     )
 
 
@@ -70,14 +70,6 @@ function BookAppointment() {
             [e.target.name]: e.target.value
         })
     }
-
-    const formattedTime = new Date(
-        `1970-01-01T${formData.appointment_time}`
-    ).toLocaleTimeString([], {
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true
-    });
 
     const handleSubmit = async (e) => {
 
@@ -141,6 +133,14 @@ function BookAppointment() {
             return
         }
 
+        const formattedTime = new Date(
+            `1970-01-01T${formData.appointment_time}`
+        ).toLocaleTimeString([], {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true
+        });
+
         setLoading(true)
 
         try {
@@ -157,8 +157,7 @@ function BookAppointment() {
                 selectedService?.name ||
                 services.find(
                     service =>
-                        service.id ==
-                        formData.service
+                        service.id === Number(formData.service)
                 )?.name;
             
             const message = `
@@ -178,8 +177,6 @@ function BookAppointment() {
             
                 "_blank"
             );
-            
-            setLoading(false);
             
             navigate("/");
 
@@ -201,7 +198,8 @@ function BookAppointment() {
 
                 toast.error("Booking Failed")
             }
-
+        }
+        finally{
             setLoading(false)
         }
     }
@@ -366,38 +364,29 @@ function BookAppointment() {
                         }
 
 
-                        <input
-                            type="date"
-
-                            name="appointment_date"
-
-                            className="
-                                form-control
-                                booking-input
-                            "
-
-                            min={
-                                new Date()
-                                    .toISOString()
-                                    .split("T")[0]
-                            }
-
-                            onChange={handleChange}
-                        />
+                        <div className="booking-field">
+                            <CalendarDays size={18} />
+                            <input
+                                type="date"
+                                name="appointment_date"
+                                value={formData.appointment_date}
+                                onChange={handleChange}
+                                className="form-control booking-input"
+                                min={new Date().toISOString().split("T")[0]}
+                            />
+                        </div>
 
 
-                        <input
-                            type="time"
-
-                            name="appointment_time"
-
-                            className="
-                                form-control
-                                booking-input
-                            "
-
-                            onChange={handleChange}
-                        />
+                        <div className="booking-field">
+                            <Clock3 size={18} />
+                            <input
+                                type="time"
+                                name="appointment_time"
+                                value={formData.appointment_time}
+                                onChange={handleChange}
+                                className="form-control booking-input"
+                            />
+                        </div>
 
 
                         <button

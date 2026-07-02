@@ -181,6 +181,21 @@
     background: black;
 }
 
+.booking-field{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:10px;
+}
+
+.booking-field svg{
+    color:#777;
+    flex-shrink:0;
+}
+
+.booking-field input{
+    flex:1;
+}
 
 /* =========================================
    RESPONSIVE
