@@ -245,7 +245,7 @@ function Contact() {
             "
 
             />
-            <Link rel="canonical"
+            <link rel="canonical"
                   href="https://angels-frontend.vercel.app/contact"
             />
 

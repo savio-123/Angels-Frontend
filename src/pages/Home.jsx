@@ -94,7 +94,7 @@ const Home = () => {
             property="og:image"
             content="https://angels-frontend.vercel.app/logo.png"
         />
-        <Link rel="canonical"
+        <link rel="canonical"
               href="https://angels-frontend.vercel.app/"
         />
 

@@ -65,7 +65,7 @@ const Services = () => {
                 pedicure, threading and more.
                 "
             />
-            <Link rel="canonical"
+            <link rel="canonical"
                   href="https://angels-frontend.vercel.app/services"
             />
 

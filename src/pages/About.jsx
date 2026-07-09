@@ -111,7 +111,7 @@ const About = () => {
             to luxury beauty care.
             "
             />'
-            <Link rel="canonical"
+            <link rel="canonical"
             href="https://angels-frontend.vercel.app/about"
             />
 
