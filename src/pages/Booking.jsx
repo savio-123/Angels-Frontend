@@ -14,9 +14,6 @@ import Footer from "../components/Footer";
 import MovingGallery from "../components/MovingGallery";
 
 import "../styles/Bookingcss.css";
-import Link from "daisyui/components/link";
-
-
 
 function BookAppointment() {
 
