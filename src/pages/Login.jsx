@@ -38,7 +38,23 @@ const Login = () => {
         }
     }
     return (
+    <>
+     <Helmet>
 
+    <title>
+
+    Admin Login | Angel's Beauty Parlour
+
+    </title>
+
+    <meta
+    name="robots"
+    content="noindex,nofollow"
+    />
+
+    </Helmet>
+         
+  
         <div className="container mt-5">
 
             <h2>Login</h2>
@@ -68,6 +84,7 @@ const Login = () => {
             </form>
 
         </div>
+    </>    
     )
 }
 

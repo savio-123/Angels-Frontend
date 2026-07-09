@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import api from '../services/api'
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import WhyChooseUs from "../components/WhyChooseUs";
 import ServicesSection from "../components/ServicesSection";
@@ -46,6 +47,54 @@ const Home = () => {
     return (
 
         <>
+        
+        <Helmet>
+
+        <title>
+            Angel's Beauty Parlour | Premium Beauty Salon in Calicut
+        </title>
+
+        <meta
+            name="description"
+            content="
+            Experience premium beauty services including
+            bridal makeup, facial, hair spa, threading,
+            manicure and pedicure at Angel's Beauty Parlour
+            in Calicut. Book your appointment online today.
+            "
+        />
+
+        <meta
+            name="keywords"
+            content="beauty parlour,beauty salon,bridal makeup,facial,hair spa,threading,manicure,pedicure,Thamarassery,Kerala"
+        />
+
+        <meta
+            property="og:title"
+            content="Angel's Beauty Parlour | Premium Beauty Salon in Thamarassery, Calicut"
+        />
+
+        <meta
+            property="og:description"
+            content="Book premium beauty and hair care services online."
+        />
+
+        <meta
+            property="og:type"
+            content="website"
+        />
+
+        <meta
+            property="og:url"
+            content="https://angels-frontend.vercel.app/"
+        />
+
+        <meta
+            property="og:image"
+            content="https://angels-frontend.vercel.app/logo.png"
+        />
+
+        </Helmet>
 
             {/* HERO SECTION */}
             <Navbar />

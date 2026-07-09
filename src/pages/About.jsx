@@ -5,6 +5,7 @@ import {
     FaShieldAlt,
     FaHeart
 } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 import InnerNavbar from "../components/InnerNavbar";
 import Footer from "../components/Footer";
@@ -97,6 +98,27 @@ const About = () => {
     return (
 
         <>
+        <Helmet>
+
+            <title>
+
+            About Us | Angel's Beauty Parlour
+
+            </title>
+
+            <meta
+
+            name="description"
+
+            content="
+            Learn more about Angel's Beauty Parlour,
+            our professional team and our commitment
+            to luxury beauty care.
+            "
+
+            />
+
+            </Helmet>
 
             <InnerNavbar transparent />
 

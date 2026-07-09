@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import api from "../services/api";
 import {CalendarDays, Clock3} from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 import InnerNavbar from "../components/InnerNavbar";
 import Footer from "../components/Footer";
@@ -208,6 +209,20 @@ function BookAppointment() {
     return (
 
         <>
+        <Helmet>
+
+            <title>
+              Book Appointment | Angel's Beauty Parlour
+            </title>
+            <meta
+            name="description"
+            content="
+            Book your beauty appointment online with
+            Angel's Beauty Parlour. Quick, easy and secure
+            appointment booking.
+            "
+            />
+            </Helmet>
 
             <InnerNavbar />
             <div className="booking-page">

@@ -2,6 +2,7 @@ import InnerNavbar from "../components/InnerNavbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import api from "../services/api";
+import { Helmet } from "react-helmet-async";
 
 import {
     FaMapMarkerAlt,
@@ -225,6 +226,27 @@ function Contact() {
     return (
 
         <>
+          <Helmet>
+
+            <title>
+
+            Contact Us | Angel's Beauty Parlour
+
+            </title>
+
+            <meta
+
+            name="description"
+
+            content="
+            Get in touch with Angel's Beauty Parlour.
+            Call us, visit our salon or book an
+            appointment online.
+            "
+
+            />
+
+            </Helmet>
             <InnerNavbar transparent/>
 
             {/* HERO */}

@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-
-import api from "../services/api";
-
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import InnerNavbar from "../components/InnerNavbar";
 import Footer from "../components/Footer";
 import useReveal from "../hooks/useReveal";
 
 import "../styles/Services.css";
+import api from "../services/api";
 
 
 const Services = () => {
@@ -52,6 +51,22 @@ const Services = () => {
     return (
 
         <>
+          <Helmet>
+
+            <title>
+                Beauty Services | Angel's Beauty Parlour
+            </title>
+
+            <meta
+                name="description"
+                content="
+                Explore our premium beauty services including
+                bridal makeup, facials, hair spa, manicure,
+                pedicure, threading and more.
+                "
+            />
+
+            </Helmet>
 
             <InnerNavbar />
 
