@@ -101,21 +101,18 @@ const About = () => {
         <Helmet>
 
             <title>
-
             About Us | Angel's Beauty Parlour
-
             </title>
-
             <meta
-
             name="description"
-
             content="
             Learn more about Angel's Beauty Parlour,
             our professional team and our commitment
             to luxury beauty care.
             "
-
+            />'
+            <Link rel="canonical"
+            href="https://angels-frontend.vercel.app/about"
             />
 
             </Helmet>

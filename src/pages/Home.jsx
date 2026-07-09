@@ -9,6 +9,7 @@ import OurWorks from "../components/OurWorks";
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import MovingGallery from '../components/MovingGallery';
+import LocalBusinessSchema from "../components/SEO/LocalBusinessSchema";
 
 import "../styles/Home.css"
 import Navbar from '../components/Navbar';
@@ -93,9 +94,12 @@ const Home = () => {
             property="og:image"
             content="https://angels-frontend.vercel.app/logo.png"
         />
+        <Link rel="canonical"
+              href="https://angels-frontend.vercel.app/"
+        />
 
         </Helmet>
-
+        <LocalBusinessSchema />
             {/* HERO SECTION */}
             <Navbar />
             <div className="hero-section">

@@ -13,6 +13,7 @@ import Footer from "../components/Footer";
 import MovingGallery from "../components/MovingGallery";
 
 import "../styles/Bookingcss.css";
+import Link from "daisyui/components/link";
 
 
 
@@ -221,6 +222,9 @@ function BookAppointment() {
             Angel's Beauty Parlour. Quick, easy and secure
             appointment booking.
             "
+            />
+            <Link rel="canonical"
+            href="https://angels-frontend.vercel.app/book-appointment"
             />
             </Helmet>
 

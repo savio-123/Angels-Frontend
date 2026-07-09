@@ -245,6 +245,9 @@ function Contact() {
             "
 
             />
+            <Link rel="canonical"
+                  href="https://angels-frontend.vercel.app/contact"
+            />
 
             </Helmet>
             <InnerNavbar transparent/>
